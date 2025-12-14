@@ -1,4 +1,3 @@
-
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -36,14 +35,11 @@ class Solution {
   // Output: 3
   // Explanation: The in-order traversal sequence is [1, 2, 3, 4, 5, 6]. The 3rd
   // smallest element is 3.
-  //
   public static int treeSize(Node<Integer> tree, int existingK, int k) {
-    if (val != -1) {
+    if (val != -1)
       return -1;
-    }
-    if (tree == null) {
+    if (tree == null)
       return 0;
-    }
     int leftSize = treeSize(tree.left, existingK, k);
     if (leftSize + existingK == k - 1) {
       val = tree.val;
